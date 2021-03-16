@@ -1,0 +1,73 @@
+.content {
+    position: fixed;
+    width: 100%;
+    margin-left: 150px;
+    height: 100%;
+}
+.subcontainer {
+    display: flex;
+    height: 50%;
+    width: 100%;
+}
+.contentHeading {
+    display: flex;
+    width: 60%;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    width: 65%;
+    font-size: 45px;
+    padding-bottom: 20px;
+    font-family: 'Abril Fatface';
+    font-weight: 200;
+}
+.rightcontent {
+    display: flex;
+    margin-top: 40px;
+    width: 24%;
+}
+h5 {
+    width: 60%;
+    font-size: 10px;
+    line-height: 14px;
+    margin-top: 20px;
+    font-family: 'Cabin';
+    font-weight: lighter;
+    color:#8391A1
+}
+.cardcontainer {
+    width: 171vh;
+    display: flex;
+    justify-content: center;
+}
+.cards {
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 130vh;
+}
+
+.card {
+    height: 140px;
+    width: 110px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+        rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+        rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.foodImg {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+p {
+    font-size: 10px;
+    font-weight: 600;
+    font-family: 'Cabin';
+    letter-spacing: 0.5px;
+}
