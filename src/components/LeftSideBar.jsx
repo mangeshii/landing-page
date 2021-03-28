@@ -1,5 +1,5 @@
 import "./LeftSIdeBar.css";
-
+import Content from "../components/Content"
 
 const LeftSideBar = () => {
     return (
@@ -27,6 +27,7 @@ const LeftSideBar = () => {
                         <button>Cart</button>
                     </div>
                 </div>
+            <Content/>
             </section>
         </>
     );
