@@ -1,40 +1,64 @@
-.leftSideBarWrapper {
-    width: 150px;
-    height: 100%;
-    position: fixed;
+.wrapper {
+    height: auto;
+    width: 100%;
 }
 
-.header {
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-    font-family: 'Abril Fatface';
-    font-weight: lighter;
+.sidemenu {
+    height: auto;
+    width: 20%;
+}
+.fas {
+    display: none;
+}
+.header h1 {
+    margin: 15% 15% 10% 24%;
+    font-size: 3vw;
 }
 
-li {
-    padding: 15px 0px;
-    margin: 0px 30px;
-    font-size: 10px;
-    color:#8391A1;
-    font-family: 'Cabin';
+ul li {
+    padding: 9% 25%;
 }
-.list1{
-    text-decoration: line-through;
-    text-decoration-color:red;
-}
-.cartButton {
-    margin: 0px 30px;
-    margin-top: 30px;
+.cartbutton {
+    margin-top: 5%;
 }
 button {
-    height: 30px;
-    width: 80px;
-    border-radius: 15px;
+    height: 3vw;
+    width: 8vw;
+    font-size: 1.3vw;
+    border-radius: 30px;
+    margin-left: 20%;
+    border: transparent;
     background-color: red;
-    outline: none;
-    border:none;
-    color:white;
-    font-family: 'Cabin';
-    letter-spacing: 0.5px;
+    color: white;
+}
+@media (max-width: 768px) {
+    .sidemenu {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 7% 0%;
+    }
+    ul li {
+        display: none;
+    }
+    .cartbutton {
+        display: none;
+    }
+    .fas {
+        font-size: 10vw;
+        color: red;
+        width: 20%;
+        text-align: center;
+        display: block;
+    }
+
+    span {
+        display: none;
+    }
+    .header h1 {
+        width: 60%;
+        font-size: 8vw;
+    }
 }
