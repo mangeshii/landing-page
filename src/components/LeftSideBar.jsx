@@ -14,7 +14,7 @@ const LeftSideBar = () => {
                     </div>
                     <div className="navlist">
                         <ul>
-                            <li>About</li>
+                            <li className="list1">About</li>
                             <li>Services</li>
                             <li>Cuisine</li>
                             <li>Gallery</li>
