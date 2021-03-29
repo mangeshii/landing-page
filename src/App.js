@@ -1,5 +1,4 @@
 import LeftSideBar from "./components/LeftSideBar"
-// import Content from "./components/Content"
 import "./index.css"
 
 
@@ -8,7 +7,6 @@ function App() {
     <>
     <div className="wrapper">
     <LeftSideBar/>
-    {/* <Content/> */}
     </div>
     </>
   );

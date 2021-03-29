@@ -1,104 +1,111 @@
+/* #456
+#678 */
 .wrapper {
-    height: 100vh;
-    width: 100%;
-    display: flex;
+    height: auto;
 }
 
-.sidemenu {
+.main {
     height: auto;
-    width: 20%;
+    display: flex;
+}
+.header {
+    flex: 0 0 20%;
+    height: 100vh;
+}
+ul .list1{
+    text-decoration-line: line-through;
+    text-decoration-color: red;
 }
 .fas {
     display: none;
 }
-.header h1 {
-    margin: 15% 15% 10% 24%;
-    font-size: 2.5vw;
-    font-family: 'Abril Fatface';
-    font-weight: 100;
-}
 
-ul li {
-    padding: 9% 25%;
-    font-size: 1.2vw;
-    color: #6b798c;
+.main-heading h1 {
+    font-size: 3rem;
+    margin: 15% 10% 10% 20%;
 }
-.list1 {
-    text-decoration: line-through;
-    text-decoration-color: red;
+ul li {
+    list-style: none;
+    padding: 8% 0%;
+    font-size: 1.3rem;
+    padding-left: 20%;
+    color:#7b8ea5
 }
 .cartbutton {
     margin-top: 5%;
+    padding-left: 18%;
 }
 button {
-    height: 3vw;
-    width: 8vw;
-    font-size: 1.3vw;
-    border-radius: 30px;
-    margin-left: 20%;
-    border: transparent;
+    height: 60px;
+    width: 140px;
+    border-radius: 50px;
+    font-size: 1.2rem;
     background-color: red;
     color: white;
-    margin-bottom: 18%;
+    border-style: none;
 }
-
-@media (max-width: 1200px) {
-    .header h1 {
-        margin: 35% 15% 30% 24%;
-        font-size: 4.2vw;
+@media (max-width:1450px){
+    .header h1{
+        font-size: 4rem;
     }
-    ul li {
-        font-size: 2.2vw;
-        padding: 15% 25%;
-    }
-    button {
-        height: 5vw;
-        width: 12vw;
-        font-size: 2.5vw;
+    ul li{
+        font-size: 1.5rem;
     }
 }
-
+@media(max-width:1200px){
+    .header h1{
+        font-size: 4.5rem;
+    }
+    ul li{
+        font-size: 1.9rem;
+        padding: 10% 0%;
+        padding-left: 20%;
+    }
+    .main-heading h1{
+        margin: 25% 10% 20% 20%;
+    }
+    .cartbutton{
+        margin-top: 15%;
+    }
+    button{
+        font-size: 1.8rem;
+        height:50px;
+        width:130px;
+    }
+    span{
+        /* color:red; */
+        font-size: 4.5rem;
+    }
+}
 @media (max-width: 768px) {
-    .wrapper {
+    .main {
         display: flex;
         flex-direction: column;
     }
-    .sidemenu {
-        height: auto;
-        width: 100%;
+    .header {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
+        height: auto;
+        justify-content: space-evenly;
         padding: 5% 0%;
+    }
+    .header h1 {
+        width: 100%;
+        font-size: 5rem;
+        margin: auto;
     }
     ul li {
         display: none;
+    }
+    .fas {
+        display: block;
+        font-size: 4rem;
+        margin: auto;
+        color: red;
     }
     .cartbutton {
         display: none;
     }
-    .fas {
-        font-size: 5vw;
-        color: red;
-        width: 20%;
-        text-align: center;
-        display: block;
-    }
-
     span {
         display: none;
-    }
-    .header h1 {
-        width: 60%;
-        font-size: 6vw;
-    }
-}
-
-@media (max-width: 375px) {
-    .sidemenu {
-        padding: 2% 0%;
-    }
-    .header h1 {
-        font-size: 8vw;
     }
 }

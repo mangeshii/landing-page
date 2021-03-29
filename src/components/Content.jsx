@@ -8,13 +8,12 @@ import noodles from "../Images/noodles.jpg";
 const Content = () => {
     return (
         <>
-            <section className="content-wrapper">
+            <main className="content">
                 <div className="top-left-section">
-                    <div className="header-content">
+                    <div className="content-header">
                         <h1>
                             What are you
-                            <br />
-                            having for Lunch?
+                            <br /> having for Lunch?
                         </h1>
                     </div>
                 </div>
@@ -28,29 +27,29 @@ const Content = () => {
                 </div>
                 <div className="bottom-section">
                     <div class="flex-container">
-                        <div className="image">
-                            <img src={taco} alt="" />
-                            <p>Mexixan Taco</p>
+                        <div className='image'>
+                            <img src={taco} alt=""/>
+                            <p>Mexican Taco</p>
                         </div>
-                        <div className="image">
-                            <img src={pizza} alt="" />
-                            <p>Farmhouse pizza</p>
+                        <div className='image'>
+                            <img src={pizza} alt=""/>
+                            <p>Farmhouse Pizza</p>
                         </div>
-                        <div className="image">
-                            <img src={burger} alt="" />
-                            <p>Chicken Burger</p>
+                        <div className='image'>
+                        <img src={burger} alt=""/>
+                        <p>Chicken Burger</p>
                         </div>
-                        <div className="image">
-                            <img src={nachos} alt="" />
+                        <div className='image'>
+                            <img src={nachos} alt=""/>
                             <p>Loaded Nachos</p>
                         </div>
                         <div className="flex5 image">
-                            <img src={noodles} alt="" />
+                            <img src={noodles} alt=""/>
                             <p>Hakka Noodles</p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </main>
         </>
     );
 };
